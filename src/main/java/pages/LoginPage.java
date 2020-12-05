@@ -1,7 +1,9 @@
 package pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -9,14 +11,14 @@ public class LoginPage extends BasePage{
 
     public final String PAGE_PATH = "https://twitter.com/home";
 
-    @FindBy(xpath = ".//input[@name='session[username_or_email]']")
-    public WebElement usernameInputField;
+    @FindBy(how = How.XPATH, using = ".//input[@name='session[username_or_email]']")
+    public SelenideElement usernameInputField;
 
-    @FindBy(name = "session[password]")
-    public WebElement passwordInputField;
+    @FindBy(how = How.NAME, using = "session[password]")
+    public SelenideElement passwordInputField;
 
-    @FindBy(xpath = ".//div[@data-testid='LoginForm_Login_Button']")
-    public WebElement loginButton;
+    @FindBy(how = How.XPATH, using = ".//div[@data-testid='LoginForm_Login_Button']")
+    public SelenideElement loginButton;
 
     public void navigateToLoginPage(){
         open(PAGE_PATH);
