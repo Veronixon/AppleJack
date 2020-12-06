@@ -2,26 +2,24 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import org.junit.Assert;
 import pages.LoginPage;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class LoginPageStepDef {
-    LoginPage loginPage;
 
-    public LoginPageStepDef(LoginPage loginPage) {
-        this.loginPage = loginPage;
-    }
+    private LoginPage loginPage;
 
     @And("I'm on Login page")
     public void iCheckLoginPageLoaded() {
-        assertTrue(loginPage.isPageLoaded(), "Login page is not downloaded");
+        assertTrue(loginPage.isPageLoaded(), "Log in page is not displayed");
     }
 
     @Given("I navigate to Login page")
     public void iNavigateToLoginPage() {
-        loginPage.navigateToLoginPage();
+        loginPage = LoginPage.navigateToLoginPage();
     }
 
     @And("I login to account")
