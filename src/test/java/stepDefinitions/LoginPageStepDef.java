@@ -19,7 +19,7 @@ public class LoginPageStepDef {
 
     @Given("I navigate to Login page")
     public void iNavigateToLoginPage() {
-        loginPage = LoginPage.navigateToLoginPage();
+        loginPage = LoginPage.navigateTo();
     }
 
     @And("I login to account")

@@ -20,7 +20,7 @@ public class LoginPage extends BasePage{
     @FindBy(how = How.XPATH, using = ".//div[@data-testid='LoginForm_Login_Button']")
     public SelenideElement loginButton;
 
-    public static LoginPage navigateToLoginPage(){
+    public static LoginPage navigateTo(){
         return open(PAGE_PATH, LoginPage.class);
     }
 
