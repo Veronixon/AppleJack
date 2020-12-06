@@ -1,0 +1,183 @@
+[1607273611.746][INFO]: Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 37236
+[1607273611.747][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1607273612.465][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607273609902_3480_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607273609902_3480_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1607273612.482][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607273609902_3480_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1607273612.487][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1607273612.494][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\vivanu\AppData\Local\Temp\scoped_dir17792_846417709" data:,
+[1607273613.806][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1607273615.834][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1607273617.864][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.88",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761})",
+         "userDataDir": "C:\\Users\\vivanu\\AppData\\Local\\Temp\\scoped_dir17792_846417709"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:57290"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "099616d21296fd7ed1bbbc5dd99c4b01"
+}
+[1607273617.938][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1607273617.939][INFO]: Waiting for pending navigations...
+[1607273617.943][INFO]: Done waiting for pending navigations. Status: ok
+[1607273618.062][INFO]: Waiting for pending navigations...
+[1607273618.063][INFO]: Done waiting for pending navigations. Status: ok
+[1607273618.063][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE SetWindowRect {
+   "height": 738,
+   "width": 1298,
+   "x": 10,
+   "y": 10
+}
+[1607273618.076][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1607273618.076][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE SetTimeouts
+[1607273618.086][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND Navigate {
+   "url": "https://twitter.com/home"
+}
+[1607273618.086][INFO]: Waiting for pending navigations...
+[1607273618.087][INFO]: Done waiting for pending navigations. Status: ok
+[1607273618.634][INFO]: Waiting for pending navigations...
+[1607273619.569][INFO]: Done waiting for pending navigations. Status: ok
+[1607273619.569][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE Navigate
+[1607273619.659][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@class='top-bar']//*[text()='Sign up']"
+}
+[1607273619.659][INFO]: Waiting for pending navigations...
+[1607273619.807][INFO]: Done waiting for pending navigations. Status: ok
+[1607273619.934][INFO]: Waiting for pending navigations...
+[1607273619.938][INFO]: Done waiting for pending navigations. Status: ok
+[1607273619.938][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='top-bar']//*[text()='Sign up']"}
+  (Session info: chrome=87.0.4280.88)
+[1607273620.042][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] COMMAND Quit {
+
+}
+[1607273620.630][INFO]: [099616d21296fd7ed1bbbc5dd99c4b01] RESPONSE Quit

@@ -1,0 +1,176 @@
+[1607183877.699][INFO]: Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 46494
+[1607183877.699][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1607183878.523][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607183875495_19524_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607183875495_19524_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1607183878.541][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "D:\\Sources\\AppleJack\\build\\downloads\\1607183875495_19524_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1607183878.545][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1607183878.553][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\vivanu\AppData\Local\Temp\scoped_dir11632_1743436495" data:,
+[1607183880.709][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1607183882.952][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1607183884.971][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "87.0.4280.88",
+      "chrome": {
+         "chromedriverVersion": "87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761})",
+         "userDataDir": "C:\\Users\\vivanu\\AppData\\Local\\Temp\\scoped_dir11632_1743436495"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:63771"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "a2fb257bf9bcdf30b34791d4724e76a4"
+}
+[1607183885.051][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1607183885.051][INFO]: Waiting for pending navigations...
+[1607183885.055][INFO]: Done waiting for pending navigations. Status: ok
+[1607183885.174][INFO]: Waiting for pending navigations...
+[1607183885.176][INFO]: Done waiting for pending navigations. Status: ok
+[1607183885.176][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] RESPONSE SetWindowRect {
+   "height": 738,
+   "width": 1298,
+   "x": 10,
+   "y": 10
+}
+[1607183885.185][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1607183885.185][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] RESPONSE SetTimeouts
+[1607183885.205][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] COMMAND Navigate {
+   "url": "https://twitter.com/home"
+}
+[1607183885.205][INFO]: Waiting for pending navigations...
+[1607183885.206][INFO]: Done waiting for pending navigations. Status: ok
+[1607183885.663][INFO]: Waiting for pending navigations...
+[1607183887.680][INFO]: Done waiting for pending navigations. Status: ok
+[1607183887.680][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] RESPONSE Navigate
+[1607183887.923][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] COMMAND Quit {
+
+}
+[1607183890.649][INFO]: [a2fb257bf9bcdf30b34791d4724e76a4] RESPONSE Quit

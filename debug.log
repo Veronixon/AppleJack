@@ -1,0 +1,9 @@
+[1205/180858.296:ERROR:file_io_win.cc(162)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir13184_544380539\Crashpad\settings.dat: Не удается найти указанный файл. (0x2)
+[1205/182417.086:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1206/174252.286:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\vivanu\AppData\Local\Temp\scoped_dir12368_1427410999\Crashpad\attachments\4c55f371-17f4-4a05-a94f-ef4c8c35f909: Системе не удается найти указанный путь. (0x3)
+[1206/174828.198:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\vivanu\AppData\Local\Temp\scoped_dir21784_2004231053\Crashpad\attachments\2fc06fb5-7c49-45c1-b88e-b1f78be111b9: Системе не удается найти указанный путь. (0x3)
+[1206/175031.812:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1206/175031.814:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1206/183337.688:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\vivanu\AppData\Local\Temp\scoped_dir19324_1220493724\Crashpad\attachments\efd44d5f-cf7d-47c1-bdd3-0fb91dff97a8: Системе не удается найти указанный путь. (0x3)
+[1206/210503.301:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1206/210503.307:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
