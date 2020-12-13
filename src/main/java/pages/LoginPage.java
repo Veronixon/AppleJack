@@ -1,15 +1,14 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.page;
 
 public class LoginPage extends BasePage{
-    public static final String PAGE_PATH = "/home";
+    public static final String PAGE_PATH = "https://twitter.com/login";
 
     @FindBy(xpath = ".//input[@name='session[username_or_email]']")
     private SelenideElement usernameInputField;

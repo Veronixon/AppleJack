@@ -16,4 +16,9 @@ public class HomePageStepDef {
     public void iCheckHomePageLoaded() {
         assertTrue(homePage.isPageLoaded(), "Home page is not downloaded.");
     }
+
+    @And("I navigate to Home page")
+    public void iNavigateToHomePage(){
+        homePage.navigateTo();
+    }
 }

@@ -6,3 +6,13 @@ Feature: Login page
     And I'm on Login page
     When I login to account
     Then I'm on Home page
+    And I navigate to Home page
+    Then I'm on Home page
+    And I navigate to Login page
+    And I'm on Home page
+
+    @t
+  Scenario: Check login to account
+    Given I navigate to Home page
+    And I'm on Login page
+

@@ -7,3 +7,15 @@
 [1206/183337.688:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\vivanu\AppData\Local\Temp\scoped_dir19324_1220493724\Crashpad\attachments\efd44d5f-cf7d-47c1-bdd3-0fb91dff97a8: Системе не удается найти указанный путь. (0x3)
 [1206/210503.301:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1206/210503.307:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1207/164759.662:ERROR:file_io_win.cc(162)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir1628_811194151\Crashpad\settings.dat: Системе не удается найти указанный путь. (0x3)
+[1207/164759.665:ERROR:file_io_win.cc(171)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir1628_811194151\Crashpad\reports\75889de1-4f42-4a6a-a69d-5214c65b4daf.dmp: Системе не удается найти указанный путь. (0x3)
+[1207/164759.665:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1207/174014.841:ERROR:file_io_win.cc(162)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir24184_1929663083\Crashpad\settings.dat: Системе не удается найти указанный путь. (0x3)
+[1207/174014.842:ERROR:file_io_win.cc(171)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir24184_1929663083\Crashpad\reports\4f86f01f-30d4-49e7-b634-106cc6b631ab.dmp: Системе не удается найти указанный путь. (0x3)
+[1207/174014.842:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1213/131957.895:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1213/131957.925:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1213/132424.405:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1213/132424.434:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[1213/133655.611:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1213/133655.640:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
