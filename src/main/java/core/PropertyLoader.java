@@ -5,7 +5,6 @@ import lombok.extern.log4j.Log4j;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.Properties;
 
 @Log4j

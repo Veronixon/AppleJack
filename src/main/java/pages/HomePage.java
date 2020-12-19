@@ -18,6 +18,6 @@ public class HomePage extends BasePage{
     }
 
     public void navigateTo(){
-        open(PAGE_PATH);
+        open(BASE_URL + PAGE_PATH);
     }
 }
