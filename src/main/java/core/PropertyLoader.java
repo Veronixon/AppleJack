@@ -22,7 +22,7 @@ public class PropertyLoader extends Properties {
         String propertyValue = "";
         try {
             Properties prop = new Properties();
-            String propFileName = "properties.properties";
+            String propFileName = setEnvironmentConfiguration() + ".properties";
 
             inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 
@@ -40,6 +40,32 @@ public class PropertyLoader extends Properties {
             inputStream.close();
         }
 
+        return propertyValue;
+    }
+
+    @SneakyThrows
+    public String setEnvironmentConfiguration() {
+        String propertyValue = "";
+        String propertyName = PropertyEnum.ENV.value;
+        try {
+            Properties prop = new Properties();
+            String propFileName = "base.properties";
+
+            inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+
+            if (inputStream != null) {
+                prop.load(inputStream);
+            } else {
+                throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
+            }
+
+            propertyValue = prop.getProperty(propertyName);
+
+        } catch (Exception e) {
+            log.error("Cannot get property " + propertyName + " from config file.");
+        } finally {
+            inputStream.close();
+        }
         return propertyValue;
     }
 
