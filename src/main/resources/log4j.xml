@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration>
+
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="levelMin" value="INFO"/>
+            <param name="levelMax" value="ERROR"/>
+        </filter>
+    </appender>
+
+
+      <appender name="TraceFileAppender" class="org.apache.log4j.FileAppender">
+        <param name="append" value="false"/>
+        <param name="Threshold" value="FATAL"/>
+        <param name="file" value="./target/loggers/logs_${project.name}.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{MMM-dd HH:mm} [%t] %-5p - %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="levelMin" value="FATAL"/>
+            <param name="levelMax" value="FATAL"/>
+        </filter>
+    </appender>
+
+    <root>
+        <appender-ref ref="console"/>
+        <appender-ref ref="TraceFileAppender"/>
+    </root>
+</log4j:configuration>

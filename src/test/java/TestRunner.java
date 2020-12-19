@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
         glue = {"stepDefinitions"},
         features = {"src/test/java/scenarios"},
         stepNotifications = true,
-        tags = "@t"
+        tags = "@TwitterRegression"
 )
 public class TestRunner {
 
