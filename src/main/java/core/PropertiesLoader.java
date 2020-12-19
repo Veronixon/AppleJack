@@ -8,12 +8,12 @@ import java.io.InputStream;
 import java.util.Properties;
 
 @Log4j
-public class PropertyLoader extends Properties {
+public class PropertiesLoader extends Properties {
     InputStream inputStream;
 
     @SneakyThrows
     public static String getProperty(PropertyEnum property) {
-        return new PropertyLoader().getPropertyValue(property);
+        return new PropertiesLoader().getPropertyValue(property);
     }
 
     @SneakyThrows
@@ -21,7 +21,7 @@ public class PropertyLoader extends Properties {
         String propertyValue = "";
         try {
             Properties prop = new Properties();
-            String propFileName = setEnvironmentConfiguration() + ".properties";
+            String propFileName = getEnvironmentConfiguration() + ".properties";
 
             inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 
@@ -34,7 +34,7 @@ public class PropertyLoader extends Properties {
             propertyValue = prop.getProperty(propertyName.value);
 
         } catch (Exception e) {
-            log.error("Cannot get property " + propertyName + " from config file.");
+            log.fatal("Cannot get property " + propertyName + " from config file.");
         } finally {
             inputStream.close();
         }
@@ -43,7 +43,7 @@ public class PropertyLoader extends Properties {
     }
 
     @SneakyThrows
-    public String setEnvironmentConfiguration() {
+    public String getEnvironmentConfiguration() {
         String propertyValue = "";
         String propertyName = PropertyEnum.ENV.value;
         try {
@@ -61,7 +61,7 @@ public class PropertyLoader extends Properties {
             propertyValue = prop.getProperty(propertyName);
 
         } catch (Exception e) {
-            log.error("Cannot get property " + propertyName + " from config file.");
+            log.fatal("Cannot get property " + propertyName + " from config file.");
         } finally {
             inputStream.close();
         }
@@ -70,7 +70,8 @@ public class PropertyLoader extends Properties {
 
     public enum PropertyEnum {
         ENV("env"),
-        BASE_URL("base.url");
+        BASE_URL("base.url"),
+        TEST_DATA_FOLDER("test.data.folder");
 
         private String value;
 

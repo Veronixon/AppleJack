@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import core.TestDataLoader;
+import core.User;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import pages.LoginPage;
@@ -25,8 +27,9 @@ public class LoginPageStepDef {
         loginPage.navigateTo();
     }
 
-    @And("I login to account")
-    public void iLoginToAccount() {
-        loginPage.login();
+    @And("I login to account as {string}")
+    public void iLoginToAccount(String userId) {
+        User user = TestDataLoader.getTestUser(userId);
+        loginPage.login(user.getUsername(), user.getPassword());
     }
 }

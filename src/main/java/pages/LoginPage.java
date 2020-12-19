@@ -21,9 +21,9 @@ public class LoginPage extends BasePage{
         return usernameInputField.isDisplayed();
     }
 
-    public void login(){
-        usernameInputField.sendKeys("Veronik17231118");
-        passwordInputField.sendKeys("MyPass123");
+    public void login(String username, String password){
+        usernameInputField.sendKeys(username);
+        passwordInputField.sendKeys(password);
         loginButton.click();
     }
 
