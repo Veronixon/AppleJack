@@ -1,4 +1,4 @@
-package stepDefinitions;
+package twitter.stepDefinitions;
 
 import io.cucumber.java.en.And;
 import pages.HomePage;

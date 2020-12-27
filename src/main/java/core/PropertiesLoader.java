@@ -42,6 +42,8 @@ public class PropertiesLoader extends Properties {
         return propertyValue;
     }
 
+
+
     @SneakyThrows
     public String getEnvironmentConfiguration() {
         String propertyValue = "";
@@ -71,7 +73,9 @@ public class PropertiesLoader extends Properties {
     public enum PropertyEnum {
         ENV("env"),
         BASE_URL("base.url"),
-        TEST_DATA_FOLDER("test.data.folder");
+        TEST_DATA_FOLDER("test.data.folder"),
+        BROWSER("browser"),
+        DEFAULT_TIMEOUT("defaultTimeout");
 
         private String value;
 

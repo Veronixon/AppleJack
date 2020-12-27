@@ -1,4 +1,4 @@
-package stepDefinitions;
+package twitter.stepDefinitions;
 
 import core.TestDataLoader;
 import core.User;
