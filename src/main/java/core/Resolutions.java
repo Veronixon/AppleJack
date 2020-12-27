@@ -9,7 +9,7 @@ public enum Resolutions {
     private String value;
 
     Resolutions(String device) {
-        this.value = value;
+        this.value = device;
     }
 
     public String getValue(){

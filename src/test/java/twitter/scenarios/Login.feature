@@ -1,6 +1,7 @@
 @TwitterRegression
 Feature: Login page
 
+  @MobileView
   Scenario: Check login to account
     Given I navigate to Login page
     And I'm on Login page
