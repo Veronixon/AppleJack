@@ -42,3 +42,6 @@
 [1219/111748.887:ERROR:file_io_win.cc(162)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir10020_738530022\Crashpad\settings.dat: Системе не удается найти указанный путь. (0x3)
 [1219/111748.889:ERROR:file_io_win.cc(171)] CreateFile C:\Users\vivanu\AppData\Local\Temp\scoped_dir10020_738530022\Crashpad\reports\9773afcb-8d46-45cb-80a9-7f98ff9af588.dmp: Системе не удается найти указанный путь. (0x3)
 [1219/111748.889:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[0109/185723.828:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0109/185723.834:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0109/190917.565:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
