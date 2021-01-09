@@ -15,9 +15,6 @@ public class DriverManager {
         }
     }
 
-
-
-
     public enum Resolutions {
         iPhone_X("375x812"),
         iPad("768x1024"),
