@@ -6,6 +6,7 @@ pom.xml.versionsBackup
 pom.xml.next
 dependency-reduced-pom.xml
 buildNumber.properties
+debug.log
 .mvn/timing.properties
 
 /.settings/
